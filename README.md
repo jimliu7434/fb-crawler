@@ -31,6 +31,7 @@
 - **POST** method use body to pass params
 - every response has a **error** object if something wrong
 - every response has a **result** object if everything is OK
+- for more details & samples, read [FbCrawlerTest.postman_collection.json](/test/FbCrawlerTest.postman_collection.json) (it's a [Postman](https://www.getpostman.com/) setting file)
 
 |Url|Parameters| Result |
 |:-|-|-|
