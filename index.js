@@ -11,7 +11,7 @@ if (!accesstoken) {
     throw new Error(`Please put "Access Token" to config file`);
 }
 
-const server = app.listen(port, (err) => {
+app.listen(port, (err) => {
     if (err) {
         console.log(err);
     } else {
@@ -25,10 +25,6 @@ const server = app.listen(port, (err) => {
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
-// error handling
-app.use((errCode, req, res, next) => {
-    // todo  return 500 error
-});
 
 
 // routing
