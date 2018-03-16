@@ -5,6 +5,12 @@ const app = express();
 const port = Number(config.website.port || process.env.PORT || 80);
 const install = require('./module/install');
 
+// checking config is OK
+let accesstoken = config.fb.accessToken || process.env.ACCESSTOKEN;
+if (!accesstoken) {
+    throw new Error(`Please put "Access Token" to config file`);
+}
+
 const server = app.listen(port, (err) => {
     if (err) {
         console.log(err);
