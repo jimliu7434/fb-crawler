@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/jimliu7434/fb-crawler#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
-    "fb": "^2.0.0"
+    "mysql2": "^1.5.2",
+    "request": "^2.85.0",
+    "sequelize": "^4.37.0"
   }
 }
