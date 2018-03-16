@@ -11,6 +11,12 @@ class Crawler {
         this.AccessToken = accesstoken;
     }
 
+    /**
+     * 根據輸入的 name 向 FB 查詢所有朋友ID
+     * @param {string} name 
+     * @returns {string} id
+     * @returns {array} friends
+     */
     getFriends (name) {
         let that = this;
         return new Promise((resolve, reject) => {

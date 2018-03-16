@@ -4,6 +4,12 @@ const Sequelize = require('sequelize');
 class Friends {
     constructor() { }
 
+    /**
+     * 向 mysql 寫入 id & friend' ids    
+     * @param {string} id 
+     * @param {set} fids 
+     * @returns {Promise}
+     */
     async add(id, fids) {
         if (!id)
             return;
@@ -20,6 +26,12 @@ class Friends {
         return await Promise.all(promiseList);
     }
 
+    /**
+     * 查詢 idA 與 idB 的共同好友ID
+     * @param {string} idA 
+     * @param {string} idB 
+     * @returns {array} mutual friends id list
+     */
     async getMutualFriend(idA, idB) {
         const db = global.mysql.db;
         let query = '';
