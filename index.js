@@ -2,7 +2,7 @@ const config = require('./config/config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = Number(config.website.port || process.env.PORT);
+const port = Number(config.website.port || process.env.PORT || 80);
 const install = require('./module/install');
 
 const server = app.listen(port, (err) => {
