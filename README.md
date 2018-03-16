@@ -4,14 +4,18 @@
 ## Prepare
 - Node.js (v6 up) & NPM are must!
 
-- Prepare a **mysql** server with at least one database, one user who can read/write data and **create table** from this database!
+- Prepare a **mysql** server with at least one database, one user who can read/write data and **create table** from this database! 
+- You don't have to create **ANY** table. We will create everything we need by ourselves
 
-- Modify [/config/config.js](/config/config.js) 
+- And then, modify [/config/config.js](/config/config.js) 
 
     1. add your FB Access Token @ config: **fb.options.accessToken**
     2. choose your own website port @ config: **website.port** (*default is 80*)
     3. put your mysql information @ config: **mysql**
-    4. and run `npm start`
+- Now we can run our script:
+```
+npm start
+```
 
 
 ## How to use
