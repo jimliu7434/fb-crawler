@@ -1,0 +1,472 @@
+{
+	"info": {
+		"name": "FbCrawlerTest",
+		"_postman_id": "3bbeefc1-41b3-459f-2fb4-38a072255a6d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fbcrawler-Async",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"me\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:80/fbcrawler/async",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"fbcrawler",
+						"async"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "43121385-f049-4a20-b8a5-e45e0ccbb979",
+					"name": "getMutual-Async",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"me\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:80/fbcrawler/async",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "80",
+							"path": [
+								"fbcrawler",
+								"async"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Mar 2018 08:33:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-puHNDTmTkdiVLQyC4XbCo1kz4g8\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 34674,
+					"body": "{\"result\":\"OK\"}"
+				}
+			]
+		},
+		{
+			"name": "fbcrawler-Promise",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"me\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:80/fbcrawler/promise",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"fbcrawler",
+						"promise"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "67b44093-82fd-47c2-99af-e1a577f1cc1d",
+					"name": "getMutual-Promise",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"me\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:80/fbcrawler/promise",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "80",
+							"path": [
+								"fbcrawler",
+								"promise"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Mar 2018 08:35:22 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-puHNDTmTkdiVLQyC4XbCo1kz4g8\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 41543,
+					"body": "{\"result\":\"OK\"}"
+				}
+			]
+		},
+		{
+			"name": "mutualfriend-Promise",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:80/mutualfriend/promise?idA=12345&idB=123456",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"mutualfriend",
+						"promise"
+					],
+					"query": [
+						{
+							"key": "idA",
+							"value": "12345",
+							"equals": true
+						},
+						{
+							"key": "idB",
+							"value": "123456",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "a48beb95-0833-4b77-b0e4-18a96b3eb6e4",
+					"name": "fbcrawler-Promise",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:80/mutualfriend/promise?idA=12345&idB=123456",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "80",
+							"path": [
+								"mutualfriend",
+								"promise"
+							],
+							"query": [
+								{
+									"key": "idA",
+									"value": "12345",
+									"equals": true
+								},
+								{
+									"key": "idB",
+									"value": "123456",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "76",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Mar 2018 07:44:05 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4c-bIa+BqIlPtoXJ7+6R+lxBNc0oLU\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 77,
+					"body": "{\"result\":{\"idA\":\"12345\",\"idB\":\"123456\",\"mutualFriends\":[\"223456\",\"23456\"]}}"
+				}
+			]
+		},
+		{
+			"name": "mutualfriend-Async",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1:80/mutualfriend/async?idA=12345&idB=123456",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"mutualfriend",
+						"async"
+					],
+					"query": [
+						{
+							"key": "idA",
+							"value": "12345",
+							"equals": true
+						},
+						{
+							"key": "idB",
+							"value": "123456",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "b3531a09-cc9f-46d3-8a56-a7a15c59ac8e",
+					"name": "fbcrawler-Async",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:80/mutualfriend/async?idA=12345&idB=123456",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "80",
+							"path": [
+								"mutualfriend",
+								"async"
+							],
+							"query": [
+								{
+									"key": "idA",
+									"value": "12345",
+									"equals": true
+								},
+								{
+									"key": "idB",
+									"value": "123456",
+									"equals": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "76",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Mar 2018 07:44:30 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4c-bIa+BqIlPtoXJ7+6R+lxBNc0oLU\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 52,
+					"body": "{\"result\":{\"idA\":\"12345\",\"idB\":\"123456\",\"mutualFriends\":[\"223456\",\"23456\"]}}"
+				}
+			]
+		}
+	]
+}

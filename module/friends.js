@@ -24,7 +24,7 @@ class Friends {
         const db = global.mysql.db;
         let query = '';
         query += `SELECT FriendId `;
-        query += `FROM Friendship.Friends `
+        query += `FROM Friends `
         query += `WHERE Id IN (:ids) `
         query += `GROUP BY FriendId `
         query += `HAVING COUNT(FriendId) > 1 `;
