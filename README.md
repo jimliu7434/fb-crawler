@@ -26,7 +26,7 @@
 ||*/async*| GET | input 2 IDs then output their mutual friends (writen by async/await) |
 
 ### Input Parameters & Return Value
-- */promise* & */async* have the save input & output 
+- */promise* & */async* have the same input & output 
 - **GET** method use querystring to pass params
 - **POST** method use body to pass params
 - every response has a **error** object if something wrong
