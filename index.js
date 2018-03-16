@@ -1,56 +1,31 @@
 const config = require('./config/config');
-const FB = require('fb');
-const APPID = config.fb.appId || process.env.APPID;
-const APPSECRET = config.fb.appSecret || process.env.APPSECRET;
-FB.options(
-    {
-        version: config.fb.version,
-        appId: APPID,
-        appSecret: APPSECRET,
-    },
-);
-global.FB = FB;
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = Number(config.website.port || process.env.PORT);
+const install = require('./module/install');
 
-const getAccessToken = () => {
-    return new Promise((resolve, reject) => {
-        FB.api('oauth/access_token',
-            {
-                client_id: APPID,
-                client_secret: APPSECRET,
-                grant_type: 'client_credentials'
-            },
-            (res) => {
-                if (!res || res.error) {
-                    reject(res.error || new Error(`get accesstoken no response`))
-                }
+const server = app.listen(port, (err) => {
+    if (err) {
+        console.log(err);
+    } else {
+        // install all db schema if 1st time run
+        install();
+        console.log('建立 Server: ' + `http://localhost:${port}`);
+    }
+});
 
-                resolve(res.access_token);
-            });
-    });
-};
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json
+app.use(bodyParser.json());
+// error handling
+app.use((errCode, req, res, next) => {
+    // todo  return 500 error
+});
 
 
-const getFriends = () => {
-    return new Promise((resolve, reject) => {
-        FB.api(
-            '/me',
-            {
-                fields: 'id,name,friends'
-            },
-            (res) => {
-                if (!res || res.error) {
-                    reject(res.error || new Error(`get friends no response`));
-                }
-                resolve(res);
-            });
-    });
-};
+// routing
+app.use('/fbcrawler', require('./router/fbcrawler'));
+app.use('/mutualfriend', require('./router/mutualfriend'));
 
-const init = async () => {
-    let accesstoken = await getAccessToken();
-
-    let friends = await getFriends();
-    console.log(friends);
-}
-
-init();
